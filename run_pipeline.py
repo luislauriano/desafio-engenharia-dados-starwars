@@ -7,8 +7,11 @@ def run_pipeline():
     people = fetch_data("people")
     
     if people:
-        insert_people(people)
-        print("Pipeline executada com sucesso!")
+        success = insert_people(people) 
+        if success:
+            print("Pipeline executada com sucesso!")
+        else:
+            print("Pipeline falhou durante a fase de carga.")
     else:
         print("Falha na extração: nenhum dado encontrado.")
 
