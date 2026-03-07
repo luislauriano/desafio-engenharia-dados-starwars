@@ -1,4 +1,4 @@
-from db_connection import get_connection
+from data_pipeline.db_connection import get_connection
 
 def clean_numeric(value):
     if value in ["unknown", "n/a", "none"]:
