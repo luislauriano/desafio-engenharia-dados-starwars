@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  postgres:
+    image: postgres:14
+    container_name: swapi_postgres
+    environment:
+      POSTGRES_USER: swapi
+      POSTGRES_PASSWORD: swapi
+      POSTGRES_DB: swapi
+    ports:
+      - "5432:5432"
