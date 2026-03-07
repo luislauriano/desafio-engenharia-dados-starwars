@@ -4,7 +4,7 @@ def clean_numeric(value):
     if value in ["unknown", "n/a", "none"]:
         return None
     try:
-        return value.replace(",", "")
+        return str(value).replace(",", "")
     except AttributeError:
         return value
 
@@ -35,10 +35,12 @@ def insert_people(people_list):
         
         conn.commit()
         print("Carga finalizada com sucesso!")
+        return True 
         
     except Exception as e:
         print(f"Erro durante a carga: {e}")
-        conn.rollback() 
+        conn.rollback()
+        return False 
     finally:
         cursor.close()
         conn.close()
