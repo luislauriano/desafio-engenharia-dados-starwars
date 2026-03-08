@@ -25,6 +25,8 @@ desafio-engenharia-dados-starwars/
 │
 ├── run_pipeline.py
 ├── requirements.txt
+├── docker-compose.yml
+├── .gitignore
 ├── README.md
 │
 ├── data_pipeline/
