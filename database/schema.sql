@@ -30,3 +30,12 @@ CREATE TABLE planets (
     url TEXT UNIQUE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE TABLE films (
+    id SERIAL PRIMARY KEY,
+    title TEXT NOT NULL,
+    episode_id INTEGER,
+    release_date DATE,
+    url TEXT UNIQUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
