@@ -38,8 +38,8 @@ desafio-engenharia-dados-starwars/
 ├── database/
 │ └── schema.sql
 │
-└── notebooks/
-└── analise_exploratoria.ipynb
+├── notebooks/
+│ └── analise_exploratoria.ipynb
 ```
 A estrutura do projeto foi organizada de forma modular para refletir um fluxo simples de engenharia de dados, separando claramente as responsabilidades de cada etapa do pipeline. A pasta data_pipeline contém os módulos responsáveis pela lógica de extração dos dados da API, conexão com o banco de dados e carga das informações no PostgreSQL. O arquivo run_pipeline.py atua como ponto de entrada do pipeline, orquestrando as etapas de extração e carga para os diferentes recursos da API. Scripts SQL utilizados para criação das tabelas ficam na pasta database, enquanto a pasta notebooks contém o notebook utilizado para realizar a análise exploratória e responder às perguntas propostas no desafio. Essa organização facilita a manutenção do código, a reutilização de componentes e reflete uma estrutura comum em projetos de pipelines de dados.
 
