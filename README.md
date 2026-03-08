@@ -50,12 +50,12 @@ A estrutura do projeto foi organizada de forma modular para refletir um fluxo si
 ```
 - Linguagem: Python 3.10
 - Extração: Consumo de API RESTful com tratamento de paginação e persistência de sessão utilizando Requests
-- Transformação & Análise: Pandas, Jupyter Notebook
+- Transformação & Análise: Pandas, Jupyter Notebook, Plotly (Visualização dos dados)
 - Banco de Dados: PostgreSQL, Psycopg2 (Database Adapter)
 - Ambiente & Segurança: python-dotenv, Docker
 ```
 
-As tecnologias utilizadas neste projeto foram escolhidas por sua ampla adoção em fluxos de trabalho de engenharia e análise de dados. **Python** foi utilizado por sua simplicidade e forte ecossistema para manipulação de dados e integração com APIs. A biblioteca **Requests** foi usada para consumir a API da SWAPI de forma eficiente, enquanto **Psycopg2** permite a comunicação direta com o banco **PostgreSQL**, escolhido por ser um banco relacional robusto e amplamente utilizado em projetos de dados. **Pandas e Jupyter Notebook** foram utilizados para realizar a análise exploratória e gerar insights a partir dos dados carregados. **Docker** foi utilizado para containerizar o banco de dados, garantindo um ambiente isolado e reprodutível para execução do projeto. E o uso de **python-dotenv** permite gerenciar credenciais de forma segura através de variáveis de ambiente.
+As tecnologias utilizadas neste projeto foram escolhidas por sua ampla adoção em fluxos de trabalho de engenharia e análise de dados. **Python** foi utilizado por sua simplicidade e forte ecossistema para manipulação de dados e integração com APIs. A biblioteca **Requests** foi usada para consumir a API da SWAPI de forma eficiente, enquanto **Psycopg2** permite a comunicação direta com o banco **PostgreSQL**, escolhido por ser um banco relacional robusto e amplamente utilizado em projetos de dados. **Pandas, Plotly e Jupyter Notebook** foram utilizados para realizar a análise exploratória e gerar insights a partir dos dados carregados. **Docker** foi utilizado para containerizar o banco de dados, garantindo um ambiente isolado e reprodutível para execução do projeto. E o uso de **python-dotenv** permite gerenciar credenciais de forma segura através de variáveis de ambiente.
 
 ---
 
